@@ -22,8 +22,8 @@ const ContactUs = () => {
       });
 
       if (res.ok) {
-        setShowPopup(true); // ✅ Show popup
-        formRef.current.reset(); // ✅ Clear form fields
+        setShowPopup(true);
+        formRef.current.reset();
       } else {
         alert("Failed to send. Try again.");
       }
@@ -34,7 +34,6 @@ const ContactUs = () => {
 
   return (
     <section className="py-12 px-4 sm:px-8 bg-grey-50 text-black" id="contact">
-      {/* ✅ Popup */}
       {showPopup && (
         <div className="fixed inset-0 bg-black bg-opacity-40 flex items-center justify-center z-50">
           <div className="bg-white rounded-xl shadow-lg p-8 max-w-sm text-center">
@@ -54,7 +53,6 @@ const ContactUs = () => {
         </div>
       )}
 
-      {/* ✅ Header */}
       <div className="text-center mb-12" data-aos="fade-up">
         <h2 className="text-4xl sm:text-5xl font-extrabold text-gray-900">
           Contact Us
@@ -62,7 +60,6 @@ const ContactUs = () => {
       </div>
 
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
-        {/* ✅ Contact Info (same as before) */}
         <div>
           <h3
             className="text-2xl font-bold mb-6 text-gray-800"
@@ -129,7 +126,6 @@ const ContactUs = () => {
           </div>
         </div>
 
-        {/* ✅ Form */}
         <div>
           <h3
             className="text-2xl font-bold mb-6 text-gray-800"

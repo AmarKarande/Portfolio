@@ -7,7 +7,6 @@ import {
   FaWhatsapp,
 } from "react-icons/fa";
 import profile from "../assets/profile.png";
-import profilee from "../assets/profilee.jpg";
 
 const Hero = () => {
   return (
@@ -15,7 +14,6 @@ const Hero = () => {
       id="home"
       className="relative flex flex-col md:flex-row bg-gray-50 items-center justify-between px-8 md:px-16 pt-32 pb-20  min-h-screen"
     >
-      {/* Left Side */}
       <div className="space-y-6 max-w-xl z-10 pl-3">
         <div className="space-y-2">
           <h2 className="text-6xl font-bold text-gray-900 pb-4 ">
@@ -73,19 +71,17 @@ const Hero = () => {
         </a>
       </div>
 
-      {/* Right Side */}
       <div className="w-90 h-90 pl-0.3  hidden md:block rounded-full overflow-hidden border-4 border-white shadow-lg">
         <img
           src={profile}
           alt="Amar Karande"
           className="w-90 h-90 object-cover object-center"
           onError={(e) => {
-            e.target.src = "https://via.placeholder.com/256"; // Fallback image
+            e.target.src = "https://via.placeholder.com/256";
           }}
         />
       </div>
 
-      {/* Scroll Down Indicator */}
       <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 text-center">
         <p className="text-gray-400 text-sm mb-1">Scroll down</p>
         <div className="w-4 h-8 border-2 border-gray-400 rounded-full mx-auto flex items-start justify-center">

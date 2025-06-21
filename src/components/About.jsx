@@ -9,7 +9,6 @@ const About = () => {
       className="min-h-screen flex items-center bg-white px-4 sm:px-6"
     >
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 items-center gap-6 py-10 w-full">
-        {/* Left Side Image - visible only on desktop (md and up) */}
         <div className="hidden md:flex justify-center md:justify-start">
           <img
             src={profileImage}
@@ -23,7 +22,6 @@ const About = () => {
           <h2 className="text-4xl font-bold text-gray-900 mb-2">About Me</h2>
           <p className="text-gray-500 mb-4">My introduction</p>
 
-          {/* Image for mobile only (<sm), hidden on sm and above */}
           <div className="flex justify-center mb-6 sm:hidden">
             <img
               src={profileImage}
@@ -32,7 +30,6 @@ const About = () => {
             />
           </div>
 
-          {/* Cards */}
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6 text-center bg-white p-2 rounded-xl">
             <div className="p-4 border rounded-xl shadow-sm  bg-gray-50">
               <FaBriefcase className="text-xl mx-auto mb-1" />
@@ -51,14 +48,12 @@ const About = () => {
             </div>
           </div>
 
-          {/* Description */}
           <p className="text-gray-700 mb-6 leading-relaxed">
             Frontend developer, I create web pages with modern UI/UX design. I
             have several years of experience and my clients are always satisfied
             with the quality and results of the projects I deliver.
           </p>
 
-          {/* Download CV Button */}
           <a
             href="/AmarKarandeCV.pdf"
             download

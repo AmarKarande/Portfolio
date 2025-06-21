@@ -46,8 +46,8 @@ const projects = [
       "React Icons",
       "getform.io",
     ],
-    github: "https://github.com/your-username/blog-platform",
-    live: "https://blog-platform.live",
+    github: "https://github.com/AmarKarande/Portfolio",
+    live: "https://portfolio-theta-three-17.vercel.app",
   },
 ];
 

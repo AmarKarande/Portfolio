@@ -11,7 +11,6 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
         <h1 className="text-xl font-bold text-gray-800">Amar Karande</h1>
 
-        {/* Desktop Menu */}
         <ul className="hidden md:flex space-x-6 text-gray-800 font-medium">
           <li>
             <a href="#home" className="hover:text-blue-600">
@@ -41,7 +40,6 @@ const Navbar = () => {
           </li>
         </ul>
 
-        {/* Mobile Toggle */}
         <div
           className="md:hidden text-2xl text-gray-800 cursor-pointer"
           onClick={toggleMenu}
@@ -50,7 +48,6 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile Menu */}
       {menuOpen && (
         <div className="md:hidden px-6 pb-4 space-y-2 bg-gray-50 border-t border-gray-200">
           <a href="#home" className="block text-gray-800 hover:text-blue-600">
